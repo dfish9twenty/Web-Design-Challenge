@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="UTF-8">
-  <title>Weather Landing page</title>
+  <title>Comparison page</title>
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
@@ -14,7 +14,7 @@
 </head>
 <body>
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <a class="navbar-brand" href="#">Latitude</a>
+        <a class="navbar-brand" href="index.html">Latitude</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
@@ -33,7 +33,7 @@
                 </div>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="Comparison.html">Comparison</a>
+                <a class="nav-link" href="#">Comparison<span class="sr-only">(current)</span></a>
             </li>
             <li class="nav-item">
                 <a class="nav-link" href="Data.html">Data</a>
@@ -41,29 +41,39 @@
             </ul>
         </div>
     </nav>
-    <div class="row content">
-        <div class="col-sm-12 col-md-8 col-lg-8">
-            <h2 class="text-left">Summary: Latitude vs. Weather Conditions</h2>
+    <div class="content">
+        <div class="col-sm-12 col-md-12" >
+            <h2 class="text-left">Comparison: Visualizations</h2>
             <hr class="my-4">
-            <img src="Resources/images/Fig1.png" alt="Latitude vs Temperature" class="rounded main-image">
-            <p>The purpose of this project was to analyze how weather conditions change as you get closer to the equator. </p>
-            <p></p>
-        </div>
-         <div class="col-sm-12 col-md-4 col-lg-4" >
-            <h2 class="text-left">Visualizations</h2>
-            <hr class="my-4">
-            <a href="MaxTemperature.html">
-                <img src="Resources/images/Fig1.png" class="rounded float-left thumbnail" alt="Latitude vs Temperature">
-            </a>
-            <a href="Humidity.html">
-                <img src="Resources/images/Fig2.png" class="rounded float right thumbnail" alt="Latitude vs Humidity">
-            </a>
-            <a href="Cloudiness.html">
-                <img src="Resources/images/Fig3.png" class="rounded float-left  thumbnail" alt="Latitude vs Temperature">
-            </a>
-            <a href="WindSpeed.html">
-                <img src="Resources/images/Fig4.png" class="rounded float right  thumbnail" alt="Latitude vs Humidity">
-            </a>
+            <p>Click for analysis</p>
+            <div class="container">
+                <div class="row imagetiles">
+                    <div class="col-lg-6 col-sm-12">
+                        <h3 class="text-center">vs. Max Temperature</h3>
+                        <a href="MaxTemperature.html">
+                            <img src="Resources/images/Fig1.png" class="rounded float-left thumbnail" alt="Latitude vs Temperature">
+                        </a>
+                    </div>
+                    <div class="col-lg-6  col-sm-12">
+                        <h3 class="text-center">vs. Humidity</h3>
+                        <a href="Humidity.html">
+                            <img src="Resources/images/Fig2.png" class="rounded float right thumbnail" alt="Latitude vs Humidity">
+                        </a>
+                    </div>
+                    <div class="col-lg-6 col-sm-12">
+                        <h3 class="text-center">vs. Cloudiness</h3>
+                        <a href="Cloudiness.html">
+                            <img src="Resources/images/Fig3.png" class="rounded float-left  thumbnail" alt="Latitude vs Temperature">
+                        </a>
+                    </div>
+                    <div class="col-lg-6 col-sm-12">
+                        <h3 class="text-center">vs. Wind Speed</h3>
+                        <a href="WindSpeed.html">
+                            <img src="Resources/images/Fig4.png" class="rounded float right  thumbnail" alt="Latitude vs Humidity">
+                        </a>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 </body>
